@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-mar-2016 15:24:20 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="clases.Nba" table="NBA" schema="PABLO" optimistic-lock="version">
+        <id name="nombre" type="string">
+            <column name="NOMBRE" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="edad" type="java.lang.Integer">
+            <column name="EDAD" precision="5" scale="0" />
+        </property>
+        <property name="puntos" type="string">
+            <column name="PUNTOS" length="5" />
+        </property>
+        <property name="rebotes" type="string">
+            <column name="REBOTES" length="5" />
+        </property>
+    </class>
+</hibernate-mapping>
